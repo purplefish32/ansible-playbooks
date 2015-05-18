@@ -1,0 +1,8 @@
+---
+- name: Upgrades heartbeat client on all servers
+  hosts: all
+  remote_user: "{{user}}"
+  sudo: yes
+
+  roles:
+      - heartbeat-client-upgrade

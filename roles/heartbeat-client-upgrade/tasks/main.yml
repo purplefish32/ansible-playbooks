@@ -1,0 +1,5 @@
+---
+- name: Update heartbeat client
+  shell: git pull --rebase
+  args: 
+    chdir: /home/heartbeat/HeartbeatClient
